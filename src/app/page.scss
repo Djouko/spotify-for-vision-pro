@@ -6,16 +6,22 @@
 }
 
 .main-container {
-  @media screen and (max-width: 1400px) {
+  @media screen and (max-width: 1000px) {
     display: none;
   }
 }
 
 .main-container-none {
   display: none;
-  @media screen and (max-width: 1400px) {
+  @media screen and (max-width: 1000px) {
     display: flex;
   }
+}
+
+.input {
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(98px);
 }
 
 .nav {
@@ -28,8 +34,7 @@
     0px -1px 1px 0px rgba(255, 255, 255, 0.25) inset,
     3px 4px 2px -3px rgba(255, 255, 255, 0.55) inset;
   backdrop-filter: blur(50px);
-  transition: 0.3s;
-
+  transition: 0.5s;
   &-button {
     border-radius: 100px;
     gap: 16px;
@@ -61,5 +66,56 @@
   }
 }
 
+.nav-right-container {
+  width: 400px;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 34px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.05),
+    0px 1px 1px 0px rgba(255, 255, 255, 0.25) inset,
+    0px -1px 1px 0px rgba(255, 255, 255, 0.25) inset,
+    3px 4px 2px -3px rgba(255, 255, 255, 0.55) inset;
+  backdrop-filter: blur(50px);
+}
+
 .box-container {
+  border-radius: 40px;
+  box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.05),
+    0px 1px 1px 0px rgba(255, 255, 255, 0.25) inset,
+    0px -1px 1px 0px rgba(255, 255, 255, 0.25) inset,
+    3px 4px 2px -3px rgba(255, 255, 255, 0.55) inset;
+  backdrop-filter: blur(98px);
+}
+
+.box-container-left {
+  border-radius: 10px;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    rgba(255, 255, 255, 0.1);
+}
+
+.box-container-right {
+  border-radius: 10px;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 163, 255, 0.2) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
+    rgba(255, 255, 255, 0.1);
+}
+
+.box-tl,
+.box-author {
+  border-radius: 60px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.05),
+    0px 1px 1px 0px rgba(255, 255, 255, 0.25) inset,
+    0px -1px 1px 0px rgba(255, 255, 255, 0.25) inset,
+    2px 3px 3px -3px rgba(255, 255, 255, 0.6) inset;
+  backdrop-filter: blur(50px);
 }
