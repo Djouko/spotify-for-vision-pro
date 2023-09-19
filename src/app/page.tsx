@@ -10,9 +10,9 @@ import gsap from "gsap";
 export default function Home() {
   return (
     <main className="main relative min-h-screen w-full">
-      <div className="main-container mx-auto min-h-screen max-w-[1400px] px-4 w-full flex justify-between items-center">
-        <div className="relative mx-4">
-          <div className="nav z-50 px-4 py-4 flex flex-col items-start gap-2">
+      <div className="main-container relative mx-auto min-h-screen w-[1200px] flex justify-center items-center">
+        <div className="absolute -left-24 z-50">
+          <div className="nav px-4 py-4 flex flex-col items-start gap-2">
             <button className="nav-button active flex items-center justify-start p-2 w-full gap-2">
               <span className="flex items-center justify-center">
                 <svg
@@ -116,6 +116,12 @@ export default function Home() {
               <span className="text-white opacity-[.85]">Search</span>
             </button>
           </div>
+        </div>
+        <div className="relative w-full">
+          <div className="box-container w-full"></div>
+          <div className="absolute"></div>
+          <img src="/vector-1.svg" alt="vector" className="absolute -bottom-8 -right-8 w-[45px]" />
+          <img src="/vector-2.svg" alt="vector" className="absolute -bottom-24 -translate-x-1/2 left-1/2 w-[180px]" />
         </div>
       </div>
 
