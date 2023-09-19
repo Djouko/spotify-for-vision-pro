@@ -1,0 +1,62 @@
+.main {
+  background: url("./../../public/banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-container {
+  @media screen and (max-width: 1180px) {
+    display: none;
+  }
+}
+
+.main-container-none {
+  display: none;
+  @media screen and (max-width: 1180px) {
+    display: flex;
+  }
+}
+
+.nav {
+  width: 75px;
+  overflow: hidden;
+  border-radius: 34px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 8px 6px 0px rgba(0, 0, 0, 0.05),
+    0px 1px 1px 0px rgba(255, 255, 255, 0.25) inset,
+    0px -1px 1px 0px rgba(255, 255, 255, 0.25) inset,
+    3px 4px 2px -3px rgba(255, 255, 255, 0.55) inset;
+  backdrop-filter: blur(50px);
+  transition: 0.3s;
+
+  &-button {
+    border-radius: 100px;
+    gap: 16px;
+    justify-content: flex-start;
+    span {
+      width: 25px;
+      height: 25px;
+      flex-shrink: 0;
+    }
+    &.active {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    span:last-child {
+      text-align: left;
+      width: 100%;
+      display: none;
+    }
+  }
+
+  &:hover {
+    width: 200px;
+
+    .nav-button {
+      span:last-child {
+        display: block;
+      }
+    }
+  }
+}
