@@ -709,7 +709,7 @@ export default function Home() {
               <p className="text-white text-justify opacity-50">
                 LN Art est un artiste fictif passionné de création visuelle,
                 basé à Yaoundé, Cameroun. Tout comme dans le développement
-                frontend, LN Art excelle dans l'art de la conception, utilisant
+                frontend, LN Art excelle dans l&apos;art de la conception, utilisant
                 diverses technologies pour exprimer sa créativité. Son objectif
                 : devenir le meilleur dans son domaine artistique. 🎨
               </p>
